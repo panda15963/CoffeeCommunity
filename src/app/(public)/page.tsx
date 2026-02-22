@@ -4,7 +4,7 @@ export default async function Page() {
     const supabase = await createClient()
 
     const { data, error } = await supabase
-        .from('todos')
+        .from('tags')
         .select('*')
 
     return (
